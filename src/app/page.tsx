@@ -618,15 +618,9 @@ export default function PaperlessPipelineLanding() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
             <a
               href="https://app.paperlesspipeline.com/accounts/register/"
-              className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-white text-primary font-bold rounded-xl hover:bg-gray-50 transition-all shadow-lg text-lg"
+              className="inline-flex items-center justify-center px-10 py-4 bg-white text-primary font-bold rounded-xl hover:bg-gray-50 transition-all shadow-lg text-xl"
             >
-              Start Your Free Trial
-            </a>
-            <a
-              href="https://www.paperlesspipeline.com/demo"
-              className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-transparent text-white font-bold rounded-xl border-2 border-white/30 hover:border-white/60 transition-all text-lg"
-            >
-              Schedule a Demo
+              Start Free Trial
             </a>
           </div>
 
