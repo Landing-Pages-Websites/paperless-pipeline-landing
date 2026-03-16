@@ -1,40 +1,7 @@
 "use client";
 
 import { useState } from "react";
-
-/* ─── CTA Click Tracking ─── */
-const trackCTAClick = (location: string) => {
-  console.log('Tracking CTA click:', location);
-  
-  // Track with MegaTag using fetch API directly
-  if (typeof window !== 'undefined') {
-    fetch('https://events-api.gomega.ai/events', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        siteKey: 'sk_mmtgq42z_ykuonlhr0rb',
-        eventType: 'cta_click',
-        properties: {
-          location: location,
-          url: 'https://app.paperlesspipeline.com/accounts/register/',
-          campaign: 'dotloop_skyslope_alternative',
-          timestamp: new Date().toISOString()
-        }
-      })
-    }).catch(err => console.log('Event tracking error:', err));
-  }
-  
-  // Track with GTM dataLayer if available
-  if (typeof window !== 'undefined' && (window as any).dataLayer) {
-    (window as any).dataLayer.push({
-      event: 'cta_click',
-      cta_location: location,
-      cta_url: 'https://app.paperlesspipeline.com/accounts/register/'
-    });
-  }
-};
+import { useTracking } from "@/hooks/useTracking";
 
 /* ─── SVG Icons (inline, no deps) ─── */
 const CheckIcon = () => (
@@ -107,6 +74,12 @@ function FAQ({ q, a }: { q: string; a: string }) {
 
 /* ─── MAIN PAGE ─── */
 export default function PaperlessPipelineLanding() {
+  // Initialize tracking with our siteKey and GTM
+  useTracking({
+    siteKey: "sk_mmtgq42z_ykuonlhr0rb",
+    gtmId: "GTM-TDRS3LT2",
+  });
+
   return (
     <main className="overflow-x-hidden">
       {/* ━━━ NAVIGATION ━━━ */}
@@ -156,7 +129,6 @@ export default function PaperlessPipelineLanding() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
               <a
                 href="https://app.paperlesspipeline.com/accounts/register/"
-                onClick={() => trackCTAClick('hero')}
                 className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary-600 transition-all shadow-lg shadow-primary/25 text-lg"
               >
                 Start Free Trial
@@ -543,7 +515,6 @@ export default function PaperlessPipelineLanding() {
           <div className="text-center">
             <a
               href="https://app.paperlesspipeline.com/accounts/register/"
-              onClick={() => trackCTAClick('pricing')}
               className="inline-flex items-center px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary-600 transition-all shadow-lg shadow-primary/25 text-lg"
             >
               Start Your Free Trial
@@ -654,7 +625,6 @@ export default function PaperlessPipelineLanding() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
             <a
               href="https://app.paperlesspipeline.com/accounts/register/"
-              onClick={() => trackCTAClick('final')}
               className="inline-flex items-center justify-center px-10 py-4 bg-white text-primary font-bold rounded-xl hover:bg-gray-50 transition-all shadow-lg text-xl"
             >
               Start Free Trial
