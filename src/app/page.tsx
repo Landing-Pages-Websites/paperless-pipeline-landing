@@ -106,17 +106,16 @@ export default function PaperlessPipelineLanding() {
           <div className="max-w-4xl mx-auto text-center">
             {/* Social proof badge */}
             <div className="inline-flex items-center gap-2 bg-white border border-primary/20 rounded-full px-4 py-2 mb-8 shadow-sm">
-              <span className="text-primary font-bold text-sm">1,000,000+</span>
-              <span className="text-gray-600 text-sm">transactions closed in 17 years</span>
+              <span className="text-primary font-bold text-sm">Trusted by 9,000+ users</span>
+              <span className="text-gray-600 text-sm">for 17 years</span>
             </div>
 
             <h1 className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl text-navy leading-tight mb-6">
-              The transaction management system brokerages{" "}
-              <span className="text-primary">settle into for years</span>
+              Simple & affordable alternative to{" "}
+              <span className="text-primary">Dotloop & SkySlope</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-              Paperless Pipeline quietly supports millions of transactions without
-              forcing you to change how your brokerage already works.
+              Real estate transaction management without the complexity, annual contracts, or high prices. Month-to-month pricing that actually makes sense.
             </p>
 
             {/* CTAs */}
@@ -125,26 +124,23 @@ export default function PaperlessPipelineLanding() {
                 href="https://app.paperlesspipeline.com/accounts/register/"
                 className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary-600 transition-all shadow-lg shadow-primary/25 text-lg"
               >
-                Try a Sample Transaction
-              </a>
-              <a
-                href="https://www.paperlesspipeline.com/demo"
-                className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-white text-primary font-bold rounded-xl border-2 border-primary/20 hover:border-primary/40 transition-all text-lg"
-              >
-                Book a Demo
+                Start Free Trial
               </a>
             </div>
 
             {/* Trust indicators */}
             <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-gray-500">
               <span className="flex items-center gap-2">
+                <CheckIcon /> 14-day free trial
+              </span>
+              <span className="flex items-center gap-2">
                 <CheckIcon /> No credit card required
               </span>
               <span className="flex items-center gap-2">
-                <CheckIcon /> Free account setup
+                <CheckIcon /> No annual contracts
               </span>
               <span className="flex items-center gap-2">
-                <CheckIcon /> Unlimited users included
+                <CheckIcon /> Month-to-month pricing
               </span>
             </div>
           </div>
@@ -156,20 +152,20 @@ export default function PaperlessPipelineLanding() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="font-heading font-bold text-3xl text-navy">1M+</div>
-              <div className="text-gray-500 text-sm mt-1">Transactions Closed</div>
+              <div className="font-heading font-bold text-3xl text-navy">9K+</div>
+              <div className="text-gray-500 text-sm mt-1">Happy Users</div>
             </div>
             <div>
-              <div className="font-heading font-bold text-3xl text-navy">17+</div>
-              <div className="text-gray-500 text-sm mt-1">Years in Business</div>
+              <div className="font-heading font-bold text-3xl text-navy">17</div>
+              <div className="text-gray-500 text-sm mt-1">Years Trusted</div>
             </div>
             <div>
-              <div className="font-heading font-bold text-3xl text-navy">80K+</div>
-              <div className="text-gray-500 text-sm mt-1">Real Estate Professionals</div>
+              <div className="font-heading font-bold text-3xl text-navy">$65</div>
+              <div className="text-gray-500 text-sm mt-1">Starting Price</div>
             </div>
             <div>
-              <div className="font-heading font-bold text-3xl text-navy">1,500+</div>
-              <div className="text-gray-500 text-sm mt-1">App Integrations</div>
+              <div className="font-heading font-bold text-3xl text-navy">0</div>
+              <div className="text-gray-500 text-sm mt-1">Annual Contracts</div>
             </div>
           </div>
         </div>
@@ -180,10 +176,10 @@ export default function PaperlessPipelineLanding() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-heading font-bold text-3xl sm:text-4xl text-navy mb-4">
-              Built for how real estate actually works
+              Why agents switch from Dotloop & SkySlope
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              Whether you run a brokerage, lead a team, or coordinate transactions, Pipeline adapts to your workflow.
+              Simple, affordable transaction management without the complexity and annual contract lock-in.
             </p>
           </div>
 
