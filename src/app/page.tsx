@@ -2,6 +2,27 @@
 
 import { useState } from "react";
 
+/* ─── CTA Click Tracking ─── */
+const trackCTAClick = (location: string) => {
+  // Track with MegaTag if available
+  if (typeof window !== 'undefined' && (window as any).MegaTag) {
+    (window as any).MegaTag.track('cta_click', {
+      location: location,
+      url: 'https://app.paperlesspipeline.com/accounts/register/',
+      campaign: 'dotloop_skyslope_alternative'
+    });
+  }
+  
+  // Track with GTM dataLayer if available
+  if (typeof window !== 'undefined' && (window as any).dataLayer) {
+    (window as any).dataLayer.push({
+      event: 'cta_click',
+      cta_location: location,
+      cta_url: 'https://app.paperlesspipeline.com/accounts/register/'
+    });
+  }
+};
+
 /* ─── SVG Icons (inline, no deps) ─── */
 const CheckIcon = () => (
   <svg className="w-5 h-5 text-primary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -122,6 +143,7 @@ export default function PaperlessPipelineLanding() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
               <a
                 href="https://app.paperlesspipeline.com/accounts/register/"
+                onClick={() => trackCTAClick('hero')}
                 className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary-600 transition-all shadow-lg shadow-primary/25 text-lg"
               >
                 Start Free Trial
@@ -508,6 +530,7 @@ export default function PaperlessPipelineLanding() {
           <div className="text-center">
             <a
               href="https://app.paperlesspipeline.com/accounts/register/"
+              onClick={() => trackCTAClick('pricing')}
               className="inline-flex items-center px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary-600 transition-all shadow-lg shadow-primary/25 text-lg"
             >
               Start Your Free Trial
@@ -618,6 +641,7 @@ export default function PaperlessPipelineLanding() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
             <a
               href="https://app.paperlesspipeline.com/accounts/register/"
+              onClick={() => trackCTAClick('final')}
               className="inline-flex items-center justify-center px-10 py-4 bg-white text-primary font-bold rounded-xl hover:bg-gray-50 transition-all shadow-lg text-xl"
             >
               Start Free Trial
