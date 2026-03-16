@@ -9,46 +9,41 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#0066ff',
-        secondary: '#004080',
-        accent: '#0080ff',
-        navy: '#1a365d',
+        primary: {
+          DEFAULT: '#006FFF',
+          dark: '#0A2B43',
+          light: '#EBF3FF',
+          50: '#EBF3FF',
+          100: '#D6E7FF',
+          200: '#A8CCFF',
+          300: '#70AAFF',
+          400: '#3D8FFF',
+          500: '#006FFF',
+          600: '#005CD6',
+          700: '#0047A8',
+          800: '#002D4D',
+          900: '#0A2B43',
+        },
+        navy: {
+          DEFAULT: '#0A2B43',
+          light: '#002D4D',
+        },
         gray: {
-          50: '#f9fafb',
-          100: '#f3f4f6',
-          200: '#e5e7eb',
-          300: '#d1d5db',
-          400: '#9ca3af',
-          500: '#6b7280',
-          600: '#4b5563',
-          700: '#374151',
-          800: '#1f2937',
+          50: '#F9FAFB',
+          100: '#F3F4F6',
+          200: '#E5E7EB',
+          300: '#D1D5DB',
+          400: '#888888',
+          500: '#6B7280',
+          600: '#444444',
+          700: '#333333',
+          800: '#1F2937',
           900: '#111827',
         },
       },
       fontFamily: {
-        sans: ['system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
-        display: ['system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
-      },
-      animation: {
-        'fade-in': 'fadeIn 0.5s ease-in-out',
-        'slide-up': 'slideUp 0.5s ease-out',
-      },
-      keyframes: {
-        fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
-        },
-        slideUp: {
-          '0%': { 
-            opacity: '0', 
-            transform: 'translateY(20px)' 
-          },
-          '100%': { 
-            opacity: '1', 
-            transform: 'translateY(0)' 
-          },
-        },
+        sans: ['Source Sans Pro', 'system-ui', '-apple-system', 'sans-serif'],
+        heading: ['Poppins', 'system-ui', '-apple-system', 'sans-serif'],
       },
     },
   },

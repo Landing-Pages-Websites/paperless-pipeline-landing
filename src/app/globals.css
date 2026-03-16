@@ -2,37 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-/* CSS variables for brand colors */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
 :root {
-  --color-primary: #0066ff;
-  --color-secondary: #004080;
-  --color-accent: #0080ff;
-  --color-navy: #1a365d;
-  --color-gray: #6b7280;
-  --color-light-gray: #f8fafc;
-  --color-white: #ffffff;
+  --color-primary: #006FFF;
+  --color-primary-dark: #0A2B43;
+  --color-primary-light: #EBF3FF;
+  --color-navy: #0A2B43;
+  --color-navy-light: #002D4D;
 }
 
-/* Base styles */
-body {
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  line-height: 1.6;
-  color: #333;
-}
-
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Focus styles for accessibility */
-*:focus {
-  outline: 2px solid var(--color-primary);
-  outline-offset: 2px;
+body {
+  font-family: 'Source Sans Pro', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Button focus styles */
-button:focus {
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+}
+
+*:focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;
 }

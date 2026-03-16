@@ -1,16 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
   title: "Real Estate Transaction Management Software | Paperless Pipeline",
-  description: "Streamline your real estate transactions with Paperless Pipeline. The simple, powerful solution trusted by brokers and agents. Free trial available.",
+  description:
+    "Paperless Pipeline is the first and the simplest real estate transaction and commission management system that agents and brokers actually enjoy using. 1,000,000+ transactions closed in 17 years.",
   openGraph: {
     title: "Real Estate Transaction Management Software | Paperless Pipeline",
-    description: "Streamline your real estate transactions with Paperless Pipeline. The simple, powerful solution trusted by brokers and agents.",
+    description:
+      "The transaction management system brokerages settle into for years. 1M+ transactions closed. Free trial available.",
     images: ["/og-image.jpg"],
     url: "https://paperless-pipeline-landing.vercel.app",
   },
@@ -36,7 +35,7 @@ export default function RootLayout({
         />
         <script src="https://cdn.gomega.ai/scripts/optimizer.min.js" async />
       </head>
-      <body className={inter.className}>
+      <body>
         {children}
 
         {/* CTM — Universal account, afterInteractive */}
