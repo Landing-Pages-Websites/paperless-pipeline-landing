@@ -110,7 +110,7 @@ export default function LandingPage() {
 
   // Initialize tracking with real site key
   useTracking({
-    siteKey: "sk_mmrwx5od_t5tr28hbeeg",
+    siteKey: "sk_mmtgq42z_ykuonlhr0rb",
   });
 
   return (
