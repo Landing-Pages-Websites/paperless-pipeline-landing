@@ -7,8 +7,8 @@ import { useEffect, useCallback, useRef } from "react";
 // ============================================================================
 
 const CONFIG = {
-  CUSTOMER_ID: "PLACEHOLDER_CUSTOMER_ID",           // UUID from admin panel
-  SITE_ID: "PLACEHOLDER_SITE_ID",                   // UUID from Conversions tab
+  CUSTOMER_ID: "355ba818-72e1-4af3-b7ea-0e7a9c6b4de8",           // UUID from admin panel
+  SITE_ID: "355ba818-72e1-4af3-b7ea-0e7a9c6b4de8",                   // UUID from Conversions tab
   SOURCE_PROVIDER: "customer-landing-paperless-pipeline",   // Unique ID for this page
   ENDPOINT: "https://analytics.gomega.ai/submission/submit",
 };

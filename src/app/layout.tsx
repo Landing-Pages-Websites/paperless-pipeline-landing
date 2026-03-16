@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Real Estate Transaction Management Software | Paperless Pipeline",
     description: "Streamline your real estate transactions with Paperless Pipeline. The simple, powerful solution trusted by brokers and agents.",
     images: ["/og-image.jpg"],
-    url: "https://paperless-pipeline.vercel.app",
+    url: "https://paperless-pipeline-landing.vercel.app",
   },
   icons: {
     icon: "/icon.png",
@@ -31,7 +31,7 @@ export default function RootLayout({
         {/* MegaTag config — set BEFORE optimizer loads */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `window.MEGA_TAG_CONFIG={siteKey:"PLACEHOLDER_SITE_KEY"};window.API_ENDPOINT="https://optimizer.gomega.ai";window.TRACKING_API_ENDPOINT="https://events-api.gomega.ai";`,
+            __html: `window.MEGA_TAG_CONFIG={siteKey:"sk_mmrwx5od_t5tr28hbeeg"};window.API_ENDPOINT="https://optimizer.gomega.ai";window.TRACKING_API_ENDPOINT="https://events-api.gomega.ai";`,
           }}
         />
         <script src="https://cdn.gomega.ai/scripts/optimizer.min.js" async />

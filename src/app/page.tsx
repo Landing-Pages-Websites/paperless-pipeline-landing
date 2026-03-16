@@ -108,9 +108,9 @@ const faqs = [
 export default function LandingPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  // Initialize tracking with placeholder site key
+  // Initialize tracking with real site key
   useTracking({
-    siteKey: "PLACEHOLDER_SITE_KEY",
+    siteKey: "sk_mmrwx5od_t5tr28hbeeg",
   });
 
   return (
