@@ -184,57 +184,57 @@ export default function PaperlessPipelineLanding() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Brokers */}
+            {/* Cost Savings */}
             <div className="bg-primary-50 rounded-2xl p-8 border border-primary/10">
               <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-5">
                 <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 0h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="font-heading font-bold text-xl text-navy mb-3">For Brokers &amp; Brokerages</h3>
+              <h3 className="font-heading font-bold text-xl text-navy mb-3">More Affordable</h3>
               <p className="text-gray-600 mb-4">
-                See the big picture in less time. Recruit, retain, and close more deals with simple transaction management software that your agents will actually use.
+                No annual contracts or surprise fees. Month-to-month pricing starting at just $65/month. Save thousands compared to Dotloop and SkySlope.
               </p>
               <ul className="space-y-2">
-                <li className="flex items-start gap-2 text-sm text-gray-600"><CheckIcon /> Transactions, commissions &amp; compliance</li>
-                <li className="flex items-start gap-2 text-sm text-gray-600"><CheckIcon /> Unlimited users, locations &amp; storage</li>
-                <li className="flex items-start gap-2 text-sm text-gray-600"><CheckIcon /> Detailed financial reporting</li>
+                <li className="flex items-start gap-2 text-sm text-gray-600"><CheckIcon /> No annual contracts</li>
+                <li className="flex items-start gap-2 text-sm text-gray-600"><CheckIcon /> Cancel anytime</li>
+                <li className="flex items-start gap-2 text-sm text-gray-600"><CheckIcon /> Transparent pricing</li>
               </ul>
             </div>
 
-            {/* Teams */}
+            {/* Simplicity */}
             <div className="bg-primary-50 rounded-2xl p-8 border border-primary/10">
               <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-5">
                 <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="font-heading font-bold text-xl text-navy mb-3">For Real Estate Teams</h3>
+              <h3 className="font-heading font-bold text-xl text-navy mb-3">Actually Simple</h3>
               <p className="text-gray-600 mb-4">
-                Boost the team's performance. Give your team a central hub for managing every deal from listing to close, with plans based on monthly production.
+                No learning curve or complicated workflows. Agents can start using it immediately. Transaction files created in under 60 seconds.
               </p>
               <ul className="space-y-2">
-                <li className="flex items-start gap-2 text-sm text-gray-600"><CheckIcon /> Central hub for all team transactions</li>
-                <li className="flex items-start gap-2 text-sm text-gray-600"><CheckIcon /> Plans based on monthly production</li>
-                <li className="flex items-start gap-2 text-sm text-gray-600"><CheckIcon /> Real-time tracking &amp; reporting</li>
+                <li className="flex items-start gap-2 text-sm text-gray-600"><CheckIcon /> Easy to learn and use</li>
+                <li className="flex items-start gap-2 text-sm text-gray-600"><CheckIcon /> No training required</li>
+                <li className="flex items-start gap-2 text-sm text-gray-600"><CheckIcon /> Clean, intuitive interface</li>
               </ul>
             </div>
 
-            {/* TCs */}
+            {/* Reliability */}
             <div className="bg-primary-50 rounded-2xl p-8 border border-primary/10">
               <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-5">
                 <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15a2.25 2.25 0 012.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
                 </svg>
               </div>
-              <h3 className="font-heading font-bold text-xl text-navy mb-3">For Transaction Coordinators</h3>
+              <h3 className="font-heading font-bold text-xl text-navy mb-3">Proven & Trusted</h3>
               <p className="text-gray-600 mb-4">
-                Save time and carry more deals. Easily manage all of your tasks with automated checklists, due dates, and document tracking.
+                17 years in business with 9,000+ satisfied users. 1,000,000+ transactions successfully closed. Reliable platform you can count on.
               </p>
               <ul className="space-y-2">
-                <li className="flex items-start gap-2 text-sm text-gray-600"><CheckIcon /> Automated checklists &amp; reminders</li>
-                <li className="flex items-start gap-2 text-sm text-gray-600"><CheckIcon /> Add your clients for free</li>
-                <li className="flex items-start gap-2 text-sm text-gray-600"><CheckIcon /> Pipeline eSign built in</li>
+                <li className="flex items-start gap-2 text-sm text-gray-600"><CheckIcon /> 17 years in business</li>
+                <li className="flex items-start gap-2 text-sm text-gray-600"><CheckIcon /> 1M+ transactions closed</li>
+                <li className="flex items-start gap-2 text-sm text-gray-600"><CheckIcon /> 99.9% uptime guarantee</li>
               </ul>
             </div>
           </div>
