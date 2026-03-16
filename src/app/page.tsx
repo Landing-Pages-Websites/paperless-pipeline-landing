@@ -4,13 +4,26 @@ import { useState } from "react";
 
 /* ─── CTA Click Tracking ─── */
 const trackCTAClick = (location: string) => {
-  // Track with MegaTag if available
-  if (typeof window !== 'undefined' && (window as any).MegaTag) {
-    (window as any).MegaTag.track('cta_click', {
-      location: location,
-      url: 'https://app.paperlesspipeline.com/accounts/register/',
-      campaign: 'dotloop_skyslope_alternative'
-    });
+  console.log('Tracking CTA click:', location);
+  
+  // Track with MegaTag using fetch API directly
+  if (typeof window !== 'undefined') {
+    fetch('https://events-api.gomega.ai/events', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        siteKey: 'sk_mmtgq42z_ykuonlhr0rb',
+        eventType: 'cta_click',
+        properties: {
+          location: location,
+          url: 'https://app.paperlesspipeline.com/accounts/register/',
+          campaign: 'dotloop_skyslope_alternative',
+          timestamp: new Date().toISOString()
+        }
+      })
+    }).catch(err => console.log('Event tracking error:', err));
   }
   
   // Track with GTM dataLayer if available

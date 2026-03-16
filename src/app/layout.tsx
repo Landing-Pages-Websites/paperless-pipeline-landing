@@ -45,7 +45,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             __html: `window.MEGA_TAG_CONFIG={siteKey:"sk_mmtgq42z_ykuonlhr0rb"};window.API_ENDPOINT="https://optimizer.gomega.ai";window.TRACKING_API_ENDPOINT="https://events-api.gomega.ai";`,
           }}
         />
-        <script src="https://cdn.gomega.ai/scripts/optimizer.min.js" async />
+        <script src="https://cdn.gomega.ai/scripts/optimizer.min.js" data-site-id="sk_mmtgq42z_ykuonlhr0rb" async />
       </head>
       <body>
         {/* Google Tag Manager (noscript) */}
