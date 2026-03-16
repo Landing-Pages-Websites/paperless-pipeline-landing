@@ -85,22 +85,10 @@ export default function PaperlessPipelineLanding() {
               <span className="font-heading font-bold text-[#0082c8] text-lg">Paperless Pipeline</span>
             </a>
 
-            {/* Nav links - desktop */}
-            <div className="hidden md:flex items-center gap-8">
-              <a href="#features" className="text-gray-600 hover:text-primary transition-colors text-sm font-medium">Features</a>
-              <a href="#who-its-for" className="text-gray-600 hover:text-primary transition-colors text-sm font-medium">Who It's For</a>
-              <a href="#pricing" className="text-gray-600 hover:text-primary transition-colors text-sm font-medium">Pricing</a>
-              <a href="#testimonials" className="text-gray-600 hover:text-primary transition-colors text-sm font-medium">Reviews</a>
-            </div>
 
-            {/* CTA buttons */}
-            <div className="flex items-center gap-3">
-              <a
-                href="https://app.paperlesspipeline.com/"
-                className="hidden sm:inline-flex text-sm font-medium text-gray-600 hover:text-primary transition-colors"
-              >
-                Log In
-              </a>
+
+            {/* CTA button */}
+            <div className="flex items-center">
               <a
                 href="https://app.paperlesspipeline.com/accounts/register/"
                 className="inline-flex items-center px-5 py-2.5 bg-primary text-white text-sm font-semibold rounded-lg hover:bg-primary-600 transition-colors shadow-sm"
@@ -671,70 +659,18 @@ export default function PaperlessPipelineLanding() {
       {/* ━━━ FOOTER ━━━ */}
       <footer className="bg-navy py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
+          <div className="text-center">
             {/* Brand */}
-            <div className="md:col-span-1">
-              <div className="flex items-center gap-2 mb-4">
-                <img src="/pp-logo.svg" alt="Paperless Pipeline" className="h-9 w-9 brightness-0 invert" />
-                <span className="font-heading font-bold text-white text-lg">Paperless Pipeline</span>
-              </div>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                The first and simplest real estate transaction and commission management system that agents and brokers actually enjoy using.
-              </p>
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <img src="/pp-logo.svg" alt="Paperless Pipeline" className="h-9 w-9 brightness-0 invert" />
+              <span className="font-heading font-bold text-white text-lg">Paperless Pipeline</span>
             </div>
-
-            {/* Features */}
-            <div>
-              <div className="font-heading font-semibold text-white mb-4">Features</div>
-              <ul className="space-y-2">
-                {["Transaction Management", "Checklists", "Commission Management", "Pipeline eSign", "Integrations"].map((l) => (
-                  <li key={l}>
-                    <a href="https://www.paperlesspipeline.com/transaction-software-features/" className="text-gray-400 hover:text-white text-sm transition-colors">{l}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Resources */}
-            <div>
-              <div className="font-heading font-semibold text-white mb-4">Resources</div>
-              <ul className="space-y-2">
-                {[
-                  { text: "Pricing", href: "https://www.paperlesspipeline.com/pricing/" },
-                  { text: "Case Studies", href: "https://www.paperlesspipeline.com/customers/" },
-                  { text: "Customer Reviews", href: "https://www.paperlesspipeline.com/customers/" },
-                  { text: "Schedule a Demo", href: "https://www.paperlesspipeline.com/demo" },
-                  { text: "FAQs", href: "https://www.paperlesspipeline.com/faqs/" },
-                ].map((l) => (
-                  <li key={l.text}>
-                    <a href={l.href} className="text-gray-400 hover:text-white text-sm transition-colors">{l.text}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Company */}
-            <div>
-              <div className="font-heading font-semibold text-white mb-4">Company</div>
-              <ul className="space-y-2">
-                {[
-                  { text: "Contact Us", href: "https://www.paperlesspipeline.com/contact/" },
-                  { text: "Blog", href: "https://www.paperlesspipeline.com/blog/" },
-                  { text: "Compare Pipeline", href: "https://www.paperlesspipeline.com/compare/" },
-                ].map((l) => (
-                  <li key={l.text}>
-                    <a href={l.href} className="text-gray-400 hover:text-white text-sm transition-colors">{l.text}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-gray-500 text-sm">Paperless Pipeline. Real estate transaction management software.</p>
-            <div className="flex items-center gap-6">
-              <a href="https://app.paperlesspipeline.com/" className="text-gray-400 hover:text-white text-sm transition-colors">Log In</a>
-              <a href="https://app.paperlesspipeline.com/accounts/register/" className="text-primary hover:text-primary-300 text-sm font-semibold transition-colors">Try It Free</a>
+            <p className="text-gray-400 text-sm max-w-md mx-auto mb-6">
+              The first and simplest real estate transaction and commission management system that agents and brokers actually enjoy using.
+            </p>
+            
+            <div className="border-t border-white/10 pt-6">
+              <p className="text-gray-500 text-sm">© 2024 Paperless Pipeline. All rights reserved.</p>
             </div>
           </div>
         </div>
