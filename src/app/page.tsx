@@ -466,30 +466,28 @@ export default function PaperlessPipelineLanding() {
                 name: "Megan Walz",
                 company: "Avenue Transactions",
                 role: "Transaction Coordinator",
-                headshot: "/headshot-megan.png",
+                initials: "MW",
               },
               {
                 quote: "When I opened my brokerage I heard other software was better. But now I'm back because of the ease of Paperless Pipeline. I've used it for years and I love it.",
                 name: "Kesha Kennedy",
                 company: "Legacy South Real Estate Group",
                 role: "Broker in Charge",
-                headshot: "/headshot-kesha.png",
+                initials: "KK",
               },
               {
                 quote: "I thought an all-in-one platform would keep everything in one hub. What I learned was that agents weren't using it, and it didn't work the way I expected.",
                 name: "Reed Wilson",
                 company: "The Wilson Group",
                 role: "Broker / Owner",
-                headshot: "/headshot-reed.png",
+                initials: "RW",
               },
             ].map((t, i) => (
               <div key={i} className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
                 <div className="flex items-center gap-4 mb-6">
-                  <img
-                    src={t.headshot}
-                    alt={t.name}
-                    className="w-14 h-14 rounded-full object-cover"
-                  />
+                  <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <span className="font-heading font-bold text-primary text-lg">{t.initials}</span>
+                  </div>
                   <div>
                     <div className="font-heading font-bold text-navy">{t.name}</div>
                     <div className="text-sm text-gray-500">{t.company}</div>
