@@ -113,13 +113,13 @@ export default function PaperlessPipelineLanding() {
           <div className="max-w-4xl mx-auto text-center">
             {/* Social proof badge */}
             <div className="inline-flex items-center gap-2 bg-white border border-primary/20 rounded-full px-4 py-2 mb-8 shadow-sm">
-              <span className="text-primary font-bold text-sm">Trusted by 9,000+ users</span>
+              <span className="text-primary font-bold text-sm">Trusted by 90,000+ users</span>
               <span className="text-gray-600 text-sm">for 17 years</span>
             </div>
 
             <h1 className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl text-navy leading-tight mb-6">
-              Simple & affordable alternative to{" "}
-              <span className="text-primary">Dotloop & SkySlope</span>
+              The simple, affordable{" "}
+              <span className="text-primary">transaction management</span> system brokerages love
             </h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
               Real estate transaction management without the complexity, annual contracts, or high prices. Month-to-month pricing that actually makes sense.
@@ -159,7 +159,7 @@ export default function PaperlessPipelineLanding() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="font-heading font-bold text-3xl text-navy">9K+</div>
+              <div className="font-heading font-bold text-3xl text-navy">90K+</div>
               <div className="text-gray-500 text-sm mt-1">Happy Users</div>
             </div>
             <div>
@@ -178,12 +178,47 @@ export default function PaperlessPipelineLanding() {
         </div>
       </section>
 
+      {/* ━━━ PRODUCT VISUAL ━━━ */}
+      <section className="py-20 bg-gradient-to-b from-white to-primary-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="font-heading font-bold text-3xl sm:text-4xl text-navy mb-4">
+              See Pipeline in action
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              A clean, intuitive dashboard that gives you a pulse on every transaction, task, and document at a glance.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            {/* App Dashboard Screenshot */}
+            <div className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden p-4">
+              <img
+                src="/app-dashboard.png"
+                alt="Paperless Pipeline dashboard showing active transactions, tasks, and documents"
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+
+            {/* Transaction Management GIF */}
+            <div className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden p-4">
+              <img
+                src="/transaction-management.gif"
+                alt="Transaction management workflow in Paperless Pipeline"
+                className="w-full h-auto rounded-lg"
+              />
+              <p className="text-center text-sm text-gray-500 mt-3">Transaction management made simple</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ━━━ WHO IT'S FOR ━━━ */}
       <section id="who-its-for" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-heading font-bold text-3xl sm:text-4xl text-navy mb-4">
-              Why agents switch from Dotloop & SkySlope
+              Why brokerages choose Paperless Pipeline
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
               Simple, affordable transaction management without the complexity and annual contract lock-in.
@@ -200,7 +235,7 @@ export default function PaperlessPipelineLanding() {
               </div>
               <h3 className="font-heading font-bold text-xl text-navy mb-3">More Affordable</h3>
               <p className="text-gray-600 mb-4">
-                No annual contracts or surprise fees. Month-to-month pricing starting at just $65/month. Save thousands compared to Dotloop and SkySlope.
+                No annual contracts or surprise fees. Month-to-month pricing starting at just $65/month. Unlimited users included with every plan.
               </p>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2 text-sm text-gray-600"><CheckIcon /> No annual contracts</li>
@@ -236,7 +271,7 @@ export default function PaperlessPipelineLanding() {
               </div>
               <h3 className="font-heading font-bold text-xl text-navy mb-3">Proven & Trusted</h3>
               <p className="text-gray-600 mb-4">
-                17 years in business with 9,000+ satisfied users. 1,000,000+ transactions successfully closed. Reliable platform you can count on.
+                17 years in business with 90,000+ satisfied users. 1,000,000+ transactions successfully closed. Reliable platform you can count on.
               </p>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2 text-sm text-gray-600"><CheckIcon /> 17 years in business</li>
@@ -411,37 +446,45 @@ export default function PaperlessPipelineLanding() {
             <h2 className="font-heading font-bold text-3xl sm:text-4xl text-navy mb-4">
               Trusted by real estate professionals
             </h2>
-            <p className="text-gray-600 text-lg">80,000+ agents, brokers, and TCs across the US and Canada</p>
+            <p className="text-gray-600 text-lg">90,000+ agents, brokers, and TCs across the US and Canada</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                quote: "It's so user friendly. It's easy to do. In real estate, you need to be able to record information and have that at your fingertips, and you can do that with Paperless Pipeline.",
-                name: "Real Estate Broker",
+                quote: "I've tried everything. Paperless Pipeline makes the most financial sense and it was the easiest platform to onboard agents.",
+                name: "Megan Walz",
+                company: "Avenue Transactions",
+                role: "Transaction Coordinator",
+                headshot: "/headshot-megan.png",
               },
               {
-                quote: "I can take more business now. I'm not stressing and missing things as much as I used to.",
-                name: "Transaction Coordinator",
+                quote: "When I opened my brokerage I heard other software was better. But now I'm back because of the ease of Paperless Pipeline. I've used it for years and I love it.",
+                name: "Kesha Kennedy",
+                company: "Legacy South Real Estate Group",
+                role: "Broker in Charge",
+                headshot: "/headshot-kesha.png",
               },
               {
-                quote: "This software is awesome for a real estate brokerage! It's brilliant. This software makes managing a brokerage so easy and seamless!",
-                name: "Brokerage Owner",
-              },
-              {
-                quote: "Paperless Pipeline is FANTASTIC!",
-                name: "Real Estate Professional",
-              },
-              {
-                quote: "The simplicity and proficiency is astounding. The Commission Module is a dream come true.",
-                name: "Managing Broker",
-              },
-              {
-                quote: "We've been using Paperless Pipeline for years and it just keeps getting better. The system works exactly the way we need it to.",
-                name: "Real Estate Team Lead",
+                quote: "I thought an all-in-one platform would keep everything in one hub. What I learned was that agents weren't using it, and it didn't work the way I expected.",
+                name: "Reed Wilson",
+                company: "The Wilson Group",
+                role: "Broker / Owner",
+                headshot: "/headshot-reed.png",
               },
             ].map((t, i) => (
               <div key={i} className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <div className="flex items-center gap-4 mb-6">
+                  <img
+                    src={t.headshot}
+                    alt={t.name}
+                    className="w-14 h-14 rounded-full object-cover"
+                  />
+                  <div>
+                    <div className="font-heading font-bold text-navy">{t.name}</div>
+                    <div className="text-sm text-gray-500">{t.company}</div>
+                  </div>
+                </div>
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, j) => (
                     <svg key={j} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
@@ -449,8 +492,8 @@ export default function PaperlessPipelineLanding() {
                     </svg>
                   ))}
                 </div>
-                <p className="text-gray-700 mb-4 leading-relaxed italic">"{t.quote}"</p>
-                <div className="text-sm font-semibold text-navy">{t.name}</div>
+                <p className="text-gray-700 leading-relaxed italic">&ldquo;{t.quote}&rdquo;</p>
+                <div className="text-sm font-semibold text-primary mt-4">{t.role}</div>
               </div>
             ))}
           </div>
@@ -667,7 +710,7 @@ export default function PaperlessPipelineLanding() {
             </p>
             
             <div className="border-t border-white/10 pt-6">
-              <p className="text-gray-500 text-sm">© 2024 Paperless Pipeline. All rights reserved.</p>
+              <p className="text-gray-500 text-sm">© 2026 Paperless Pipeline. All rights reserved.</p>
             </div>
           </div>
         </div>
