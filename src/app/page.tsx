@@ -190,23 +190,27 @@ export default function PaperlessPipelineLanding() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid md:grid-cols-2 gap-8 items-stretch">
             {/* App Dashboard Screenshot */}
-            <div className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden p-4">
-              <img
-                src="/app-dashboard.png"
-                alt="Paperless Pipeline dashboard showing active transactions, tasks, and documents"
-                className="w-full h-auto rounded-lg"
-              />
+            <div className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden p-4 flex flex-col">
+              <div className="relative w-full aspect-[4/3] overflow-hidden rounded-lg">
+                <img
+                  src="/app-dashboard.png"
+                  alt="Paperless Pipeline dashboard showing active transactions, tasks, and documents"
+                  className="absolute inset-0 w-full h-full object-cover object-top"
+                />
+              </div>
             </div>
 
             {/* Transaction Management GIF */}
-            <div className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden p-4">
-              <img
-                src="/transaction-management.gif"
-                alt="Transaction management workflow in Paperless Pipeline"
-                className="w-full h-auto rounded-lg"
-              />
+            <div className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden p-4 flex flex-col">
+              <div className="relative w-full aspect-[4/3] overflow-hidden rounded-lg">
+                <img
+                  src="/transaction-management.gif"
+                  alt="Transaction management workflow in Paperless Pipeline"
+                  className="absolute inset-0 w-full h-full object-cover object-top"
+                />
+              </div>
               <p className="text-center text-sm text-gray-500 mt-3">Transaction management made simple</p>
             </div>
           </div>
