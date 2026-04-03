@@ -92,7 +92,13 @@ export default function PaperlessPipelineLanding() {
               <span className="font-heading font-bold text-[#0082c8] text-lg">Paperless Pipeline</span>
             </a>
 
-
+            {/* Nav links */}
+            <div className="hidden md:flex items-center gap-8">
+              <a href="#features" className="text-sm font-medium text-gray-600 hover:text-navy transition-colors">Features</a>
+              <a href="#testimonials" className="text-sm font-medium text-gray-600 hover:text-navy transition-colors">Testimonials</a>
+              <a href="#pricing" className="text-sm font-medium text-gray-600 hover:text-navy transition-colors">Pricing</a>
+              <a href="#faq" className="text-sm font-medium text-gray-600 hover:text-navy transition-colors">FAQ</a>
+            </div>
 
             {/* CTA button */}
             <div className="flex items-center">
@@ -622,7 +628,7 @@ export default function PaperlessPipelineLanding() {
       </section>
 
       {/* ━━━ FAQ ━━━ */}
-      <section className="py-20 bg-white">
+      <section id="faq" className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-heading font-bold text-3xl sm:text-4xl text-navy mb-4">
